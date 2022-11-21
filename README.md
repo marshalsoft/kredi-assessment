@@ -1,22 +1,53 @@
-# awabah-assessment
+# Awabah-assessment
 
 This app is developed for the purpose of skill assessment by Marshall Ekene using React-Native
 
-## Screenshots
-<div >
+## Video & Screenshots
+<iframe src="video.mp4" width="600" height="300" ></iframe>
+<table >
+<tr>
+<td>
+<b>Splash screen</b>
+<br/>
 <img src="splash.jpeg" width="250" alt=" screen 1" style="padding:15px" />
-<img src="movie.jpeg" width="250" alt="screen 2"  style="padding:15px" />
-<img src="series.jpeg" width="250" alt="screen 3"  style="padding:10px" />
-<img src="movie_filter.jpeg" width="250" alt="screen 4"  style="padding:15px" />
+</td>
+<td>
+<b>Home screen</b>
+<br/>
+<img src="home.jpeg" width="250" alt="screen 2"  style="padding:15px" />
+</td>
+</tr>
+<tr>
+<td>
+<b>Movie screen</b>
+<br/>
+<img src="movie.jpeg" width="250" alt="screen 3"  style="padding:10px" />
+</td>
+<td>
+<b>Series screen</b>
+<br/>
+<img src="series.jpeg" width="250" alt="screen 4"  style="padding:15px" />
+ </td>
+</tr>
+<tr>
+<td>
+<b>Series with filter screen</b>
+<br/>
 <img src="series_filter.jpeg" width="250" alt="screen 5"  style="padding:15px" />
+</td>
+<td>
+<b>Search screen</b>
+<br/>
 <img src="search.jpeg" width="250" alt="screen 6"  style="padding:15px" />
-</div>
+</td>
+</tr>
+</table>
 
-## clone
+## Clone
 
 <docgen-index>
 
-* [`repo`](https://github.com/marshalsoft/awabah-assessment.git)
+* [`git repo cloning`](https://github.com/marshalsoft/awabah-assessment.git)
 
 </docgen-index>
 
