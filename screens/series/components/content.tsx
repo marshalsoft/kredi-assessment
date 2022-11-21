@@ -66,7 +66,8 @@ list={series}
         source={{uri:item.images.PosterArt.url}}
         resizeMode="stretch"
         /> 
-        <Text style={styles.movieTitle}>{item.title}</Text>
+         <Text style={[styles.movieTitle,{marginBottom:0}]}>{item.title}</Text>
+        <Text style={[styles.movieTitle,{fontWeight:"800"}]}>{item.releaseYear}</Text>
       </TouchableOpacity>
      }}
      />

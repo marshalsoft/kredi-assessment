@@ -4,12 +4,12 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 
 ## Screenshots
 <div >
-<img src="splash.jpeg" width="250" alt=" screen 1" style="padding:10px" />
-<img src="movie.jpeg" width="250" alt="screen 2"  style="padding:10px" />
+<img src="splash.jpeg" width="250" alt=" screen 1" style="padding:15px" />
+<img src="movie.jpeg" width="250" alt="screen 2"  style="padding:15px" />
 <img src="series.jpeg" width="250" alt="screen 3"  style="padding:10px" />
-<img src="movie_filter.jpeg" width="250" alt="screen 4"  style="padding:10px" />
-<img src="series_filter.jpeg" width="250" alt="screen 5"  style="padding:10px" />
-<img src="search.jpeg" width="250" alt="screen 6"  style="padding:10px" />
+<img src="movie_filter.jpeg" width="250" alt="screen 4"  style="padding:15px" />
+<img src="series_filter.jpeg" width="250" alt="screen 5"  style="padding:15px" />
+<img src="search.jpeg" width="250" alt="screen 6"  style="padding:15px" />
 </div>
 
 ## clone
@@ -26,6 +26,8 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 * [`react-native-cli`](https://reactnative.dev
 )
 * [`nodeJs server`](https://nodejs.org)
+* [`typescript`](https://www.typescriptlang.org/)
+* [`JSX`](https://reactjs.org/docs/introducing-jsx.html)
 
 </docgen-index>
 
