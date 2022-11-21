@@ -4,12 +4,12 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 
 ## Screenshots
 <div >
-<img src="screenshot/splash.png" width="250" alt=" screen 1" style="padding:10px" />
-<img src="screenshot/movie.png" width="250" alt="screen 2"  style="padding:10px" />
-<img src="screenshot/series.png" width="250" alt="screen 3"  style="padding:10px" />
-<img src="screenshot/movie_filter.png" width="250" alt="screen 4"  style="padding:10px" />
-<img src="screenshot/series_filter.png" width="250" alt="screen 5"  style="padding:10px" />
-<img src="screenshot/search.png" width="250" alt="screen 6"  style="padding:10px" />
+<img src="splash.jpeg" width="250" alt=" screen 1" style="padding:10px" />
+<img src="movie.jpeg" width="250" alt="screen 2"  style="padding:10px" />
+<img src="series.jpeg" width="250" alt="screen 3"  style="padding:10px" />
+<img src="movie_filter.jpeg" width="250" alt="screen 4"  style="padding:10px" />
+<img src="series_filter.jpeg" width="250" alt="screen 5"  style="padding:10px" />
+<img src="search.jpeg" width="250" alt="screen 6"  style="padding:10px" />
 </div>
 
 ## clone
@@ -17,9 +17,10 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 <docgen-index>
 
 * [`repo`](https://github.com/marshalsoft/awabah-assessment.git)
+
 </docgen-index>
 
-## Technology used
+### Technology used
 <docgen-index>
 
 * [`react-native-cli`](https://reactnative.dev
