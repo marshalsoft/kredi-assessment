@@ -3,7 +3,7 @@
 This app is developed for the purpose of skill assessment by Marshall Ekene using React-Native
 
 ## Video & Screenshots
-<iframe src="video.mp4" width="600" height="300" ></iframe>
+[![Watch the video](https://img.youtube.com/vi/PnPndcSpUuY/maxresdefault.jpg)](https://youtu.be/PnPndcSpUuY)
 <table >
 <tr>
 <td>
