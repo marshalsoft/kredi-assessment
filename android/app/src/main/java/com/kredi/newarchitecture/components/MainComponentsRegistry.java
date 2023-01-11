@@ -1,4 +1,4 @@
-package com.awabah.newarchitecture.components;
+package com.kredi.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

@@ -1,4 +1,4 @@
-package com.awabah.newarchitecture;
+package com.kredi.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.awabah.BuildConfig;
-import com.awabah.newarchitecture.components.MainComponentsRegistry;
-import com.awabah.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.kredi.BuildConfig;
+import com.kredi.newarchitecture.components.MainComponentsRegistry;
+import com.kredi.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
