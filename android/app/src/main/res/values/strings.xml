@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kredi</string>
+    <string name="white">#FFFFFF</string>
 </resources>
