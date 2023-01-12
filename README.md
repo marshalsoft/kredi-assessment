@@ -3,42 +3,42 @@
 This app is developed for the purpose of skill assessment by Marshall Ekene using React-Native
 
 ## Video & Screenshots
-[![Watch the video](https://img.youtube.com/vi/PnPndcSpUuY/maxresdefault.jpg)](https://youtu.be/PnPndcSpUuY)
+[![Watch the video](https://img.youtube.com/vi/OJH5qdnIfrU/maxresdefault.jpg)](https://youtu.be/OJH5qdnIfrU)
 <table >
 <tr>
 <td>
-<b>Splash screen</b>
+<b>Screen</b>
 <br/>
-<img src="splash.jpeg" width="250" alt=" screen 1" style="padding:15px" />
+<img src="m1.jpeg" width="250" alt=" screen 1" style="padding:15px" />
 </td>
 <td>
-<b>Home screen</b>
+<b>screen</b>
 <br/>
-<img src="home.jpeg" width="250" alt="screen 2"  style="padding:15px" />
+<img src="m2.jpeg" width="250" alt="screen 2"  style="padding:15px" />
 </td>
 </tr>
 <tr>
 <td>
-<b>Movie screen</b>
+<b>screen</b>
 <br/>
-<img src="movie.jpeg" width="250" alt="screen 3"  style="padding:10px" />
+<img src="m3.jpeg" width="250" alt="screen 3"  style="padding:10px" />
 </td>
 <td>
-<b>Series screen</b>
+<b>screen</b>
 <br/>
-<img src="series.jpeg" width="250" alt="screen 4"  style="padding:15px" />
+<img src="m4.jpeg" width="250" alt="screen 4"  style="padding:15px" />
  </td>
 </tr>
 <tr>
 <td>
-<b>Series with filter screen</b>
+
 <br/>
-<img src="series_filter.jpeg" width="250" alt="screen 5"  style="padding:15px" />
+<img src="m5.jpeg" width="250" alt="screen 5"  style="padding:15px" />
 </td>
 <td>
-<b>Search screen</b>
+
 <br/>
-<img src="search.jpeg" width="250" alt="screen 6"  style="padding:15px" />
+<img src="m6.jpeg" width="250" alt="screen 6"  style="padding:15px" />
 </td>
 </tr>
 </table>
@@ -68,11 +68,7 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 * Main App Repo consuming the above UI library to build scalable and consistent screens.
 * Ideally, I ensured the encapsulation of screens and components.
 * Each root level folder exposes a respective index.js file that helps in shortening the imports.
-* Data.json JSON feed help as database for list movies.
 
-### Future improvements & Updates
-* Provision of detail screen both in movies and series
-* Pushnotification is neccesary for customers notifications
-* The following screen must be added: (contact us, policies & terms,help, account, login, signup,forgot password etc.)
+
 
 
