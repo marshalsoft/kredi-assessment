@@ -11,7 +11,7 @@ import { AsyncStorage } from 'react-native';
 const navigationRef = React.createRef();
 
 const IdleScreen = (props:ScreenComponentType) => {
-  const [isLoggedIn,setIsLoggedIn] = useState(false);
+  const [isExpireSession,setIsExpireSession] = useState(true);
   const isConnected = useNetInfo();
   React.useEffect(():any=>{
     BackHandler.addEventListener("hardwareBackPress",():any=>{
@@ -32,14 +32,14 @@ const IdleScreen = (props:ScreenComponentType) => {
     })
    
     setTimeout(()=>{
-      setIsLoggedIn(false)
+      // setIsExpireSession(false)
     },6000)
   },[])
   return ( <View style={{flex:1,flexDirection:"column"}}>
    <NavigationContainer 
   //  ref={navigationRef}
   >
-      {!isConnected?<NetScreen />:isLoggedIn?<App 
+      {!isConnected?<NetScreen />:isExpireSession?<App 
       />:<LoginScreen 
       />}
       </NavigationContainer> 

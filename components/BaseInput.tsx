@@ -22,7 +22,9 @@ export interface BaseInputProps {
      containerStyle?: StyleProp<ViewStyle>;
      editable?: boolean;
      secureTextEntry?: boolean;
-     error?:BaseInputErrorProps
+     error?:BaseInputErrorProps;
+     leftIconStyle?: 'black'|'white';
+     max?:number;
 }
 export interface BaseInputErrorProps {
      message?:string;
@@ -38,7 +40,9 @@ const BaseInput = (props: BaseInputProps) => {
           containerStyle,
           onChangeText,
           error,
-          value
+          value,
+          leftIconStyle,
+          max
      } = props;
      const [showPassword, setShowPassword] = React.useState(false);
      const inputRef = React.useRef<TextInput>(null);
@@ -53,7 +57,7 @@ const BaseInput = (props: BaseInputProps) => {
                return (
                     <View style={[styles.inputWrapper, containerStyle]}>
                          {label && <Text style={styles.labelStyle}>{label}</Text>}
-                         <View style={{minHeight:50}}>
+                         <View style={{minHeight:50,backgroundColor:"white",borderRadius:10,elevation:3,overflow:"hidden"}}>
                               <TextInput
                                    ref={inputRef}
                                    style={[
@@ -72,6 +76,7 @@ const BaseInput = (props: BaseInputProps) => {
                                    editable={editable}
                                    secureTextEntry={showPassword}
                                    returnKeyType="done"
+                                   maxLength={max}
                               />
                               {secureTextEntry ? (
                                    <IconButton
@@ -79,14 +84,14 @@ const BaseInput = (props: BaseInputProps) => {
                                         onPress={toggleShowPassword}
                                    >
                                         {showPassword ? (
-                                             <Icons.FontAwesome size={20} name="eye-slash" />
+                                             <Icons.FontAwesome size={20} name="eye-slash" color={leftIconStyle} />
                                         ) : (
-                                             <Icons.FontAwesome size={20} name='eye' />
+                                             <Icons.FontAwesome size={20} name='eye'  color={leftIconStyle}/>
                                         )}
                                    </IconButton>
                               ) : null}
                          </View>
-                         {error && (
+                         {error?.message && (
                               <Text style={styles.errorMessage}>
                                    {error.message || 'An error occured'}
                               </Text>

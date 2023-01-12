@@ -4,21 +4,28 @@ import {
   Alert,
   DeviceEventEmitter
 } from 'react-native';
-import DashboardScreen from './screens/dashboard/index';
+import HomeScreen from './screens/home/index';
+import IntroScreen from './screens/intro/index';
+import OnboardingScreen from './screens/onboarding/index';
+import TransactionScreen from './screens/history/index';
+import TransactionDetailScreen from './screens/history/details';
+import TransferScreen from './screens/transfer';
+
 import { NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator,CardStyleInterpolators } from '@react-navigation/stack';
 import {ScreenComponentType} from './includes/types';
-const navigationRef:any = React.createRef();
+import LoginScreen from './screens/login';
+
 const Stack = createStackNavigator();
 
 const AppStack  = (props:ScreenComponentType) =>{
-
-  return(<Stack.Navigator
-    initialRouteName='dashboard'
+  return(<NavigationContainer>
+    <Stack.Navigator
+    initialRouteName='intro'
     >
       <Stack.Screen
-        name="dashboard"
-        component={DashboardScreen}
+        name="intro"
+        component={IntroScreen}
         options={{
           headerShown: false,
           headerTintColor:'orange',
@@ -28,7 +35,80 @@ const AppStack  = (props:ScreenComponentType) =>{
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
         }}
       />
-    
-    </Stack.Navigator>)
+      <Stack.Screen
+        name="home"
+        component={HomeScreen}
+        options={{
+          headerShown: false,
+          headerTintColor:'orange',
+          headerStyle:{
+            backgroundColor:'black'
+          },
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+    <Stack.Screen
+        name="onboarding"
+        component={OnboardingScreen}
+        options={{
+          headerShown: false,
+          headerTintColor:'orange',
+          headerStyle:{
+            backgroundColor:'black'
+          },
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+      <Stack.Screen
+        name="userlogin"
+        component={LoginScreen}
+        options={{
+          headerShown: false,
+          headerTintColor:'orange',
+          headerStyle:{
+            backgroundColor:'black'
+          },
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+      <Stack.Screen
+        name="transactions"
+        component={TransactionScreen}
+        options={{
+          headerShown: false,
+          headerTintColor:'orange',
+          headerStyle:{
+            backgroundColor:'black'
+          },
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+      <Stack.Screen
+        name="transaction_details"
+        component={TransactionDetailScreen}
+        options={{
+          headerShown: false,
+          headerTintColor:'orange',
+          headerStyle:{
+            backgroundColor:'black'
+          },
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+      
+      <Stack.Screen
+        name="transfer"
+        component={TransferScreen}
+        options={{
+          headerShown: false,
+          headerTintColor:'orange',
+          headerStyle:{
+            backgroundColor:'black'
+          },
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+    </Stack.Navigator>
+    </NavigationContainer>)
 }
 export default AppStack;

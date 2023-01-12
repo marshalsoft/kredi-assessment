@@ -8,6 +8,6 @@ import IdleScreen from './screens/idleScreen';
 LogBox.ignoreAllLogs(true);
 const store = configureStore();
 const ReduxOp = () =><Provider store={store}>
-<IdleScreen />
+<App />
 </Provider>;
 AppRegistry.registerComponent(appName,()=>ReduxOp);

@@ -1,5 +1,6 @@
 const initialState = {
-  appName:"Awabah"
+  appName:"Kredi",
+  firstname:"Micheal"
 }
 const AppReducer = (state = initialState, action) => {
   switch (action.type) {

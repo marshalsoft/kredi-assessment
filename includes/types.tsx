@@ -29,17 +29,24 @@ export interface NavigationProps {
  
   export interface Reducers {
     auth: string;
+    firstname?:string;
   }
-  
+  export interface LoaderProps {
+    status?:boolean;
+    message?:string
+  }
   export interface ScreenComponentType {
     title?:string;
+    label?:string;
+    error?:string;
     navigation?:NavigationProps;
     Reducer?:Reducers;
     route?:any;
     backbtn?:boolean;
     children?:React.ReactNode;
     showHeader?:boolean;
-    store?:any
+    store?:any;
+    backgroundColor?:string
   }
   
   export interface ComponentType {
@@ -48,7 +55,9 @@ export interface NavigationProps {
     route?:any;
     children?:React.ReactNode;
   }
-
+  export interface  ButtonProps {
+    onPress:()=>void
+  }
   
 export type StyleType = TextStyle | ViewStyle | ImageStyle;
 
@@ -58,6 +67,22 @@ export type StyleType = TextStyle | ViewStyle | ImageStyle;
     programType:string;
     releaseYear: number;
     title: string;
+}
+export interface HistoryItemProps  {
+  memo:string;
+  date:string;
+  amount:number;
+  currency:string;
+  placeholder:boolean;
+  status?:string;
+  onPress?:()=>void;
+}
+export interface CardItemProps {
+  brand:string;
+  amount:number; 
+  number:string;
+  expiry: string;
+  currency:string;
 }
 
 export interface PosterArt {

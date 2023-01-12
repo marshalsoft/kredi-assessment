@@ -6,6 +6,13 @@ import {
 } from 'react-native';
 const {width,height} = Dimensions.get("screen")
 const styles = StyleSheet.create({
+  slideritems:{
+    backgroundColor:"white",
+    width,
+    height,
+    justifyContent:"center",
+    alignItems:"center"
+  },
     iconButton:{
         height: 40,
         width: 40,

@@ -1,14 +1,23 @@
-import { View, Text,ActivityIndicator } from 'react-native'
+import { View,Modal,ActivityIndicator } from 'react-native'
 import React from 'react'
-import styles from '../includes/styles';
+import { LoaderProps } from '../includes/types';
+import { ModalLayout,CenterView } from './index';
+import CONSTANTS from '../includes/constants';
 
-const LoaderView = ({loading = false,message = "loading...",list = []}) => {
-return (<>{loading?<View style={{flexDirection:"row",paddingHorizontal:10,alignItems:"center",justifyContent:"flex-start"}}>
-<ActivityIndicator />
-<Text style={{color:"black",fontSize:10,marginLeft:5}}>{message}</Text>
-</View>:list.length == 0?<View style={styles.alert}>
-    <Text style={styles.alertText}>Item not found.</Text>
-</View>:null}</>)
+const LoaderView = (props:LoaderProps) => {
+return (<Modal
+visible={props.status}
+transparent={true}
+>
+<ModalLayout>
+<CenterView>
+<ActivityIndicator 
+color={CONSTANTS.COLORS.Orange}
+size="large"
+/>
+</CenterView>
+</ModalLayout>
+</Modal>)
 }
 
 export default LoaderView;
