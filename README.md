@@ -1,4 +1,4 @@
-# Awabah-assessment
+# Kredi-assessment
 
 This app is developed for the purpose of skill assessment by Marshall Ekene using React-Native
 
@@ -47,7 +47,7 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 
 <docgen-index>
 
-* [`git repo cloning`](https://github.com/marshalsoft/awabah-assessment.git)
+* [`git repo cloning`](https://github.com/marshalsoft/kredi-assessment.git)
 
 </docgen-index>
 
