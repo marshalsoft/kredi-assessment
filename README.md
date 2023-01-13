@@ -42,7 +42,9 @@ This app is developed for the purpose of skill assessment by Marshall Ekene usin
 </td>
 </tr>
 </table>
-
+### Demo login credentials
+-[] Phone number: 08123456789
+-[] Password: Admin@123
 ## Clone
 
 <docgen-index>
